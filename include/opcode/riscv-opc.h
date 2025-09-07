@@ -1867,6 +1867,18 @@
 #define MASK_VNCLIPWX  0xfc00707f
 #define MATCH_VNCLIPWI  0xbc003057
 #define MASK_VNCLIPWI  0xfc00707f
+//abs
+#define MATCH_VABS     0x48082057
+#define MASK_VABS      0xfc0ff07f
+#define MATCH_VABD     0x44002057
+#define MASK_VABD      0xfc00707f
+#define MATCH_VABDU    0x4c002057
+#define MASK_VABD      0xfc00707f
+#define MATCH_VWABDACC   0x54002057
+#define MASK_VWABDACC    0xfc00707f
+#define MATCH_VWABDACCU    0x58002057
+#define MASK_VWABDACC      0xfc00707f
+
 #define MATCH_VFADDVV  0x00001057
 #define MASK_VFADDVV  0xfc00707f
 #define MATCH_VFADDVF  0x00005057

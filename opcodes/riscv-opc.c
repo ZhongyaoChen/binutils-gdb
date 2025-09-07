@@ -2024,6 +2024,13 @@ const struct riscv_opcode riscv_opcodes[] =
 {"vnclip.wx",   0, INSN_CLASS_V,  "Vd,Vt,sVm", MATCH_VNCLIPWX, MASK_VNCLIPWX, match_opcode, 0 },
 {"vnclip.wi",   0, INSN_CLASS_V,  "Vd,Vt,VjVm", MATCH_VNCLIPWI, MASK_VNCLIPWI, match_opcode, 0 },
 
+/*zvabd instructions.*/
+{"vabs.v",     0, INSN_CLASS_ZVABD,  "Vd,VtVm",  MATCH_VABS, MASK_VABS, match_opcode, 0 },
+{"vabd.vv",    0, INSN_CLASS_ZVABD,  "Vd,Vt,VsVm",  MATCH_VABD, MASK_VABD, match_opcode, 0 },
+{"vabdu.vv",    0, INSN_CLASS_ZVABD,  "Vd,Vt,VsVm",  MATCH_VABDU, MASK_VABD, match_opcode, 0 },
+{"vwabdacc.vv",  0, INSN_CLASS_ZVABD,  "Vd,Vt,VsVm", MATCH_VWABDACC, MASK_VWABDACC, match_opcode, 0 },
+{"vwabdaccu.vv",  0, INSN_CLASS_ZVABD,  "Vd,Vt,VsVm", MATCH_VWABDACCU, MASK_VWABDACC, match_opcode, 0 },
+
 {"vfadd.vv",   0, INSN_CLASS_ZVEF, "Vd,Vt,VsVm", MATCH_VFADDVV, MASK_VFADDVV, match_opcode, 0},
 {"vfadd.vf",   0, INSN_CLASS_ZVEF, "Vd,Vt,SVm", MATCH_VFADDVF, MASK_VFADDVF, match_opcode, 0},
 {"vfsub.vv",   0, INSN_CLASS_ZVEF, "Vd,Vt,VsVm", MATCH_VFSUBVV, MASK_VFSUBVV, match_opcode, 0},
